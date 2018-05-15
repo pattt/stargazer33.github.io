@@ -104,6 +104,7 @@
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/snap.svg-min.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/restart_theme.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/collapser.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/handlebars-v4.0.11.js"></script>
 
   {% if thisnodes[0].datafile %}
   <script type="text/javascript" src="{{ ASSET_PATH }}/js/bootstrap-table.js"></script>
@@ -112,4 +113,5 @@
   {% endif %}
   {% include JB/analytics %}
   </body>
+{% include themes/restart/content.html %}
 </html>
