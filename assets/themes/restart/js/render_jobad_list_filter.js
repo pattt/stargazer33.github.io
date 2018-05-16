@@ -17,6 +17,7 @@ var isLunarIndexLoaded = false;
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
 var mapIdToJob = new Map();
 var json_data_original = [];
+var template = null;
 
 /**
  * runs when page load complete
@@ -84,6 +85,10 @@ $(document).ready(function () {
 
         $("#jobSearchForm").submit(handleJobSearchFormSubmit);
         $(".filter-checkbox").click(handleClickOnFilterCheckbox);
+
+        var source   = document.getElementById("detailFormatter").innerHTML;
+        template = Handlebars.compile(source);
+
     } catch (err) {
         console.log(err);
     }
@@ -383,9 +388,7 @@ function tableLoad(isFirstLoad) {
  * @return {string} table detail as HTML
  */
 function detailFormatter(index, jobAd) {
-    var source   = document.getElementById("detailFormatter").innerHTML,
-        template = Handlebars.compile(source),
-        context = {content: jobAd.content, url: jobAd.url, id: jobAd.id};
+    var context = {content: jobAd.content, url: jobAd.url, id: jobAd.id};
     return template(context);
 }
 
