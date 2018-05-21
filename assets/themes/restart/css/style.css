@@ -9154,3 +9154,11 @@ blockquote p {
     display: none;
   }
 }
+
+.font-body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.report-btn button {
+  padding: 5px;
+}
