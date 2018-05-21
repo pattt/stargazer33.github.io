@@ -9155,10 +9155,11 @@ blockquote p {
   }
 }
 
-.font-body {
+.report-btn-font-body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.report-btn button {
-  padding: 5px;
+.div-report-btn button {
+  color: #428bca;
+  border: none;
 }
