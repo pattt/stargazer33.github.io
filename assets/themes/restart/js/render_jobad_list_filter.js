@@ -86,8 +86,12 @@ $(document).ready(function () {
         $("#jobSearchForm").submit(handleJobSearchFormSubmit);
         $(".filter-checkbox").click(handleClickOnFilterCheckbox);
 
-        var source   = document.getElementById("detailFormatter").innerHTML;
-        detailFormatterTemplate = Handlebars.compile(source);
+        detailFormatterTemplate = Handlebars.compile(document.getElementById("detailFormatter").innerHTML);
+
+        $('#reportthisjob-modal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget),
+                recipient = button.data('postid');
+        })
 
     } catch (err) {
         console.log(err);
