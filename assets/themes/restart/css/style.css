@@ -9174,10 +9174,14 @@ blockquote p {
 
 .page-jobad-modal-tell-more > div:first-child {
     margin-right: 10px;
-  }
+}
 
-.page-jobad-modal-tell-more > div:last-child > span {
+.page-jobad-modal-tell-more > div:last-child span {
   font-size: larger;
   display: block;
+}
+
+.page-jobad-modal-tell-more label {
+  font-weight: normal;
 }
 
