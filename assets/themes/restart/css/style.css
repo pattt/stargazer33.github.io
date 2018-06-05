@@ -9163,20 +9163,20 @@ blockquote p {
   color: #428bca;
   border: none;
 }
-.tell-more {
+.page-jobad-modal-tell-more {
   display: flex;
   margin-bottom: 10px;
 }
 
-.tell-more > div:first-child {
+.page-jobad-modal-tell-more > div:first-child {
   margin-right: 10px;
 }
 
-.tell-more > div:first-child {
+.page-jobad-modal-tell-more > div:first-child {
     margin-right: 10px;
   }
 
-.tell-more > div:last-child > span {
+.page-jobad-modal-tell-more > div:last-child > span {
   font-size: larger;
   display: block;
 }
