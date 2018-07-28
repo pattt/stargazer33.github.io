@@ -125,6 +125,7 @@ $(document).ready(function () {
                 firebase.auth.GoogleAuthProvider.PROVIDER_ID,
                 firebase.auth.GithubAuthProvider.PROVIDER_ID
             ],
+            signInFlow: 'popup',
             // Other config options...
         });
         // Firebase (end)
